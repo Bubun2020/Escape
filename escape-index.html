@@ -3,15 +3,16 @@
   <head>
     <meta charset="utf-8">
     <title>Проект Escape</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
-
     <!-- навигация по сайту -->
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <!-- правильно экспортировать в svg -->
+          <!-- объединить и правильно экспортировать в svg -->
           <img src="img/logo.svg" width="140" height="29" alt="Логотип проекта «Escape»">
         </a>
         <ul class="site-navigation">
@@ -30,7 +31,7 @@
             <p>Can you build the website of my dreams?</p>
           </li>
           <li class="main-slogan-item">
-            <p>Yup, we can do that.</p>
+            <span>Yup, we can do that.</span>
           </li>
           <li class="main-slogan-item">
             <p><a class="button" href="#">Learn More</a></p>
@@ -71,7 +72,7 @@
             aenean rhoncus posuere odio in tincidunt.</p>
           </li>
           <li class="types-jobs-item">
-            <a href="#"><h3>ui/ux</h3></a>
+            <a href="#"><h3>UI/UX</h3></a>
             <p>Proin iaculis purus consequat sem cure
             digni ssim. Donec porttitora entum suscipit
             aenean rhoncus posuere odio in tincidunt.</p>
@@ -102,6 +103,7 @@
         <p>See what nice things our clients said about us.</p>
         <ul class="blockquote-list">
           <li class="blockquote-item">
+            <a href="#"><img src="img/foto1-boy.jpg" width="220" height="220" alt="Фото первого разработчика"></a>
             <blockquote cite="http://">
               <p>
                 <q>Proin iaculis purus consequat sem cure  digni ssim
@@ -113,6 +115,7 @@
             </blockquote>
           </li>
           <li class="blockquote-item">
+            <a href="#"><img src="img/foto2-man.jpg" width="220" height="220" alt="Фото первого разработчика"></a>
             <blockquote cite="http://">
               <p>
                 <q>Proin iaculis purus consequat sem cure  digni ssim
@@ -131,17 +134,142 @@
         <h2 class="visually-hidden">Sponsors</h2>
         <ul class="sponsors-list">
           <li class="sponsors-item">
-            <a href="#"></a>
+            <a href="#">
+              <img src="img/sponsor-Envato.png" width="161" height="30" alt="Envato">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a href="#">
+              <img src="img/WordPress.png" width="186" height="42" alt="WordPress">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a href="#">
+              <img src="img/Tuts+.png" width="131" height="41" alt="Tuts+">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a href="#">
+              <img src="img/Microlancer copy.png" width="167" height="42" alt="Microlancer copy">
+            </a>
           </li>
         </ul>
       </section>
 
-
+      <!-- команда рабработчиков с фото -->
+      <section class="development-team">
+        <h2>Development team</h2>
+        <p>These wonderful people make work enjoyable.</p>
+        <ul class="development-team-list">
+          <!-- первое фото -->
+          <li class="development-team-item">
+            <figure>
+              <a href="#">
+                <img src="img/foto3-woman.jpg" width="220" height="220" alt="Фото первого спонсора">
+              </a>
+              <figcaption>
+                <p>
+                  <a href="#">Kimberly Thompson</a><br>
+                  Marketer
+                </p>
+              </figcaption>
+            </figure>
+            <ul class="development-team-social">
+              <li><a class="social-button" href="#">Twitter</a></li>
+              <li><a class="social-button" href="#">Facebook</a></li>
+              <li><a class="social-button" href="#">Pinterest</a></li>
+            </ul>
+          </li>
+          <!-- 2е фото -->
+          <li class="development-team-item">
+            <figure>
+              <a href="#">
+                <img src="img/foto4-man-glasses.jpg" width="220" height="220" alt="Фото второго спонсора">
+              </a>
+              <figcaption>
+                <p>
+                  <a href="#">Rico Massimo</a><br>
+                    Coder
+                </p>
+              <figcaption>
+            </figure>
+            <ul class="development-team-social">
+              <li><a class="social-button" href="#">Twitter</a></li>
+              <li><a class="social-button" href="#">Facebook</a></li>
+              <li><a class="social-button" href="#">Pinterest</a></li>
+            </ul>
+          </li>
+          <!-- 3е фото -->
+          <li class="development-team-item">
+            <figure>
+              <a href="#">
+                <img src="img/foto5-woman-blond.jpg" width="220" height="220" alt="Фото третьего спонсора">
+              </a>
+              <figcaption>
+                <p>
+                  <a href="#">Uku Mason</a><br>
+                    Graphic Designer
+                </p>
+              <figcaption>
+            </figure>
+            <ul class="development-team-social">
+              <li><a class="social-button" href="#">Facebook</a></li>
+              <li><a class="social-button" href="#">Pinterest</a></li>
+            </ul>
+          </li>
+        </ul>
+        <p>Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+      </section>
     </main>
 
-
-
-
-
+    <!-- подвал -->
+    <footer class="main-footer">
+      <h2 class="visually-hidden">Contacts form</h2>
+      <span>Say Hello</span>
+      <p>Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</p>
+      <div class="footer-contacts">
+        <ul class="footer-contacts-list">
+          <li class="footer-contacts-item">
+            <a href="#">(416) 555-0000</a>
+          </li>
+          <li class="footer-contacts-item">
+            <a href="#">@escape</a>
+          </li>
+          <li class="footer-contacts-item">
+            <a href="#">plus.com/escape</a>
+          </li>
+          <li class="footer-contacts-item">
+            <a href="#">hello@escape.com</a>
+          </li>
+          <li class="footer-contacts-item">
+            <a href="#">facebook.com/escape</a>
+          </li>
+          <li class="footer-contacts-item">
+            <a href="#">pinterest.com/escape</a>
+          </li>
+        </ul>
+      </div>
+      <!-- форма, прочесть про формы до конца-->
+      <form class="contacts-form" action="https://echo.htmlacademy.ru" method="get">
+        <ul class="contact-form-list">
+          <li class="contact-form-item">
+            <input type="text" name="name" placeholder="Your Name *" id="name-field" value="">
+            <label class="visually-hidden" for="name-field">Your name</label>
+          </li>
+          <li class="contact-form-item">
+            <input type="text" name="email" placeholder="Your E-mail *" id="email-field" value="">
+            <label class="visually-hidden" for="email-field">Your E-mail</label>
+          </li>
+          <li class="contact-form-item">
+            <textarea name="messege" rows="8" cols="21" id="messege-field" placeholder="Your Message *"></textarea>
+            <label class="visually-hidden" for="messege-field">Your messege</label>
+          </li>
+          <li class="contact-form-item">
+            <button class="button visually-hidden" type="submit" name="submit-button" disabled>Отправить</button>
+          </li>
+        </ul>
+      </form>
+      <p>© 2014 Escape by FreebiesXpress • Made In Toronto</p>
+    </footer>
   </body>
 </html>
