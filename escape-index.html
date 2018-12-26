@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Проект Escape</title>
+    <!-- <link rel="stylesheet" href="css/fonts.css"> не работает-->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -12,8 +14,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo">
-          <!-- объединить и правильно экспортировать в svg -->
-          <img src="img/logo.svg" width="140" height="29" alt="Логотип проекта «Escape»">
+          <img src="img/logo.png" width="140" height="29" alt="Логотип проекта «Escape»">
         </a>
         <ul class="site-navigation">
           <li><a href="home.html">Home</a></li>
@@ -45,14 +46,22 @@
       <section class="web-feautures">
         <ul class="feautures-list">
           <li class="feautures-item">
-            <h2>Web Development</h2>
-            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.<br>
-            Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
+            <h2>
+              <span class="light">Web<span>
+              <span class="bold">Development<span>
+            </h2>
+            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt.</p>
+            <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim.</p>
+            <img src="img\web-development.png" width="220" height="220" alt="Картинка web development">
           </li>
-          <li class="feautures-item">
-            <h2>Identity Branding</h2>
-            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.<br>
-            Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+          <li class="feautures-item background-grey">
+            <h2>
+              <span class="light">Identity</span>
+              <span class="bold">Branding</span>
+            </h2>
+            <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit.</p>
+            <p>Iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat.</p>
+            <img src="img\Identity Branding.png" width="270" height="195" alt="Картинка identity branding">
           </li>
       </section>
 
@@ -60,7 +69,10 @@
         <h2 class="visually-hidden">jobs-list</h2>
         <ul class="types-jobs-list">
           <li class="types-jobs-item">
-            <a href="#"><h3>Branding & Identity</h3></a>
+            <a href="#">
+              <img src="img\Person-Icon1.png" width="70" height="70" alt="первый значок "Branding & Identity"">
+              <h3>Branding & Identity</h3>
+            </a>
             <p>Proin iaculis purus consequat sem cure
             digni ssim. Donec porttitora entum suscipit
             aenean rhoncus posuere odio in tincidunt.</p>
@@ -98,30 +110,33 @@
         </ul>
       </section>
 
-      <section class="reviews">
-        <h2>Awesome Clients</h2>
+      <section class="reviews background-grey">
+        <h2>
+          <span class="light">Awesome</span>
+          <span class="bold">Clients</span></h2>
         <p>See what nice things our clients said about us.</p>
         <ul class="blockquote-list">
           <li class="blockquote-item">
             <a href="#"><img src="img/foto1-boy.jpg" width="220" height="220" alt="Фото первого разработчика"></a>
-            <blockquote cite="http://">
+            <blockquote class="first-blockquote" cite="http://">
               <p>
-                <q>Proin iaculis purus consequat sem cure  digni ssim
-                   donec porttitora entum suscipit aenean rhoncus.</q>
+                <q>Proin iaculis purus consequat sem cure  digni ssim<br>
+                donec porttitora entum suscipit aenean rhoncus.</q><br>
                 <cite>
-                  - Jamie Richardson, Founder of Cocoa Media
+                  <a href="#">- Jamie Richardson, Founder of Cocoa Media</a>
                 </cite>
               </p>
             </blockquote>
           </li>
           <li class="blockquote-item">
             <a href="#"><img src="img/foto2-man.jpg" width="220" height="220" alt="Фото первого разработчика"></a>
-            <blockquote cite="http://">
+            <blockquote class="second-blockquote" cite="http://">
               <p>
-                <q>Proin iaculis purus consequat sem cure  digni ssim
-                   donec porttitora entum suscipit aenean rhoncus.</q>
+                <q>Proin iaculis purus consequat sem cure digni ssim<br>
+                donec porttitora entum suscipit aenean rhoncus.
+              </q><br>
                 <cite>
-                  - Bart Thompson, Founder of Rainel
+                  <a href="#">- Bart Thompson, Founder of Rainel</a>
                 </cite>
               </p>
             </blockquote>
@@ -158,7 +173,10 @@
 
       <!-- команда рабработчиков с фото -->
       <section class="development-team">
-        <h2>Development team</h2>
+        <h2>
+          <span class="light">Amazing</span>
+          <span class="bold">Team</span>
+        </h2>
         <p>These wonderful people make work enjoyable.</p>
         <ul class="development-team-list">
           <!-- первое фото -->
@@ -218,14 +236,18 @@
             </ul>
           </li>
         </ul>
-        <p>Proin iaculis purus consequat sem cure  digni ssim donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+        <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit<br>
+        aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
       </section>
     </main>
 
     <!-- подвал -->
     <footer class="main-footer">
       <h2 class="visually-hidden">Contacts form</h2>
-      <span>Say Hello</span>
+      <h3>
+        <span class="light">Say</span>
+        <span class="bold">Hello</span>
+      </h3>
       <p>Don’t be shy, drop us an email and say hello! We are a really nice bunch of people :)</p>
       <div class="footer-contacts">
         <ul class="footer-contacts-list">
@@ -251,23 +273,26 @@
       </div>
       <!-- форма, прочесть про формы до конца-->
       <form class="contacts-form" action="https://echo.htmlacademy.ru" method="get">
-        <ul class="contact-form-list">
-          <li class="contact-form-item">
-            <input type="text" name="name" placeholder="Your Name *" id="name-field" value="">
-            <label class="visually-hidden" for="name-field">Your name</label>
-          </li>
-          <li class="contact-form-item">
-            <input type="text" name="email" placeholder="Your E-mail *" id="email-field" value="">
-            <label class="visually-hidden" for="email-field">Your E-mail</label>
-          </li>
-          <li class="contact-form-item">
-            <textarea name="messege" rows="8" cols="21" id="messege-field" placeholder="Your Message *"></textarea>
-            <label class="visually-hidden" for="messege-field">Your messege</label>
-          </li>
-          <li class="contact-form-item">
-            <button class="button visually-hidden" type="submit" name="submit-button" disabled>Отправить</button>
-          </li>
-        </ul>
+        <fieldset>
+          <legend class="visually-hidden">Feedcack form</legend>
+            <ul class="contact-form-list">
+              <li class="contact-form-item">
+                <input type="text" name="name" placeholder="Your Name *" id="name-field" value="">
+                <label class="visually-hidden" for="name-field">Your name</label>
+              </li>
+              <li class="contact-form-item">
+                <input type="text" name="email" placeholder="Your E-mail *" id="email-field" value="">
+                <label class="visually-hidden" for="email-field">Your E-mail</label>
+              </li>
+              <li class="contact-form-item">
+                <textarea name="messege" rows="8" cols="21" id="messege-field" placeholder="Your Message *"></textarea>
+                <label class="visually-hidden" for="messege-field">Your messege</label>
+              </li>
+              <li class="contact-form-item">
+                <button class="button visually-hidden" type="submit" name="submit-button" disabled>Отправить</`button`>
+              </li>
+            </ul>
+        </fieldset>
       </form>
       <p>© 2014 Escape by FreebiesXpress • Made In Toronto</p>
     </footer>

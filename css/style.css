@@ -1,21 +1,333 @@
 /* стили для Escape */
+
 body {
   margin: 0;
   padding: 0;
 
-  font-family: "PT Sans Narrow", Arial, sans-serif;
+  font-family: "brandon_grotesqueregular", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: -0.55px;
   font-weight: normal;
   color: #777777;
-  text-transform: capitalize;
+  text-transform: full-width;
 
   background-color: #000000;
-  /* background-image: url("../img/bg.jpg"); */здесь будет
+   /* background-image: url("../img/background.jpg"); */
   background-position: top center;
   background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none;
+}
+
+.main-header {
+  color: #ffffff;
+
+  background-color: #000000;
+  background-image: url("../img/header-background.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.site-navigation,
+.main-slogan-item {
+  color: #ffffff;
+
+  list-style: none;
+}
+
+.main-header a {
+  color: #ffffff;
+}
+
+.site-navigation a {
+  font-size: 18px;
+  line-height: 41px;
+}
+
+.main-slogan {
+  text-align: center;
+}
+
+.main-slogan-list {
+  line-height: auto;
+}
+
+.main-slogan-item p {
+  font-size: 32px;
+  font-weight: lighter;
+}
+
+.main-slogan-item span {
+  font-size: 66px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.main-slogan-item a {
+  font-size: 23px;
+  text-align: inherit;
+  font-weight: bold;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.main-slogan-item .button {
+  padding: 21px 68px 26px 69px;
+}
+
+.web-feautures {
+  background-color: #ffffff;
+}
+
+.feautures-list {
+  list-style: none;
+}
+
+.feautures-item h2 {
+  color: #000000;
+  font-size: 60px;
+  line-height: 75px;
+}
+
+.feautures-item p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/* общие стили */
+.light {
+  font-weight: lighter;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.background-grey {
+  background: #fafafa;
+}
+
+.types-jobs {
+  color: #777777;
+
+  background-color: #ffffff;
+}
+
+.types-jobs-item {
+  list-style: none;
+}
+
+.types-jobs-item a {
+  color: #000000;
+}
+
+.types-jobs-item h3 {
+  font-size: 22px;
+  line-height: auto;
+  font-weight: 600;
+}
+
+.types-jobs-item p {
+  line-height: 18px;
+}
+
+.reviews h2 {
+  color: #000000;
+  font-size: 60px;
+}
+
+.reviews h2,
+.reviews p {
+  text-align: center;
+}
+
+.blockquote-list {
+  list-style: none;
+}
+
+.blockquote-item img {
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+}
+
+.first-blockquote {
+  width: 663px;
+  height: 174px;
+
+  background-image: url('../img/Speak Box.png');
+}
+
+.first-blockquote p {
+  text-align: center;
+
+  padding: 39px 85px 75px 99px;
+}
+
+.first-blockquote q {
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: -0.55px;
+
+  quotes: "“" "”";
+}
+
+.first-blockquote cite {
+  color: #7690c5;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: -0.55px;
+  font-style: normal;
+}
+
+.first-blockquote cite {
+  padding: 112px 227px 43px 105px;
+}
+/* не корректно работает */
+
+.second-blockquote {
+  width: 662px;
+  height: 174px;
+
+  background-image: url('../img/Speak Box2.png');
+}
+
+.second-blockquote p {
+  text-align: center;
+
+  padding: 41px 104px 73px 79px;
+}
+
+.second-blockquote q {
+  font-size: 26px;
+  line-height: 28px;
+  letter-spacing: -0.55px;
+
+  quotes: "“" "”";
+}
+
+.second-blockquote cite {
+  color: #7690c5;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: -0.55px;
+  font-style: normal;
+}
+
+.second-blockquote cite {
+  padding: 115px 315px 38px 84px;
+}
+/* не корректно работает */
+
+.sponsors {
+  background-color: #ffffff;
+}
+
+.sponsors-list {
+  list-style: none;
+}
+
+.development-team-social{
+  list-style: none;
+}
+
+.development-team-list li {
+  list-style: none;
+}
+
+
+.development-team h2,
+.development-team p {
+  text-align: center;
+}
+
+.development-team span {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: auto;
+  letter-spacing: -0.55px;
+}
+
+.development-team p {
+  color: #ffffff;
+}
+
+.development-team a{
+  list-style: none;
+}
+
+.development-team-item img {
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+}
+
+.main-footer {
+  background-color: #7690c5;
+}
+
+.main-footer h3 {
+  color: #ffffff;
+  font-size: 60px;
+  line-height: auto;
+  letter-spacing: -0.55px;
+}
+
+.main-footer p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing: -0.55px;
+}
+
+.footer-contacts-list {
+  list-style: none;
+}
+
+.footer-contacts-item a {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.contact-form-list {
+  list-style: none;
+}
+
+.contacts-form fieldset {
+  border: none;
+}
+
+.contact-form-item input {
+  color: #bbbbbb;
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing: -0.55px;
+
+  width: 455px;
+
+  padding: 20px;
+
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+}
+
+.contact-form-item textarea {
+  color: #bbbbbb;
+  font-size: 18px;
+  line-height: auto;
+  letter-spacing: -0.55px;
+
+  width: 455px;
+
+  padding: 20px;
+
+  border-radius: 3px;
+  border: 1px solid #cccccc;
+}
+
+.main-footer p:last-child {
+  text-align: center;
+  line-height: auto;
 }
