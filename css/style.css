@@ -12,7 +12,7 @@ body {
   color: #777777;
   text-transform: full-width;
 
-  background-color: #000000;
+  background-color: #7690c5;
    /* background-image: url("../img/background.jpg"); */
   background-position: top center;
   background-repeat: no-repeat;
@@ -52,13 +52,13 @@ a {
 }
 
 .main-slogan-list {
-  line-height: auto;
+  line-height: normal;
 }
 
-.main-slogan-item p {
+/* .main-slogan-item p {
   font-size: 32px;
   font-weight: lighter;
-}
+} */
 
 .main-slogan-item span {
   font-size: 66px;
@@ -67,9 +67,9 @@ a {
 }
 
 .main-slogan-item a {
-  font-size: 23px;
+  font-size: 32px;
   text-align: inherit;
-  font-weight: bold;
+  font-weight: lighter;
 
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -127,7 +127,7 @@ a {
 
 .types-jobs-item h3 {
   font-size: 22px;
-  line-height: auto;
+  line-height: normal;
   font-weight: 600;
 }
 
@@ -247,7 +247,7 @@ a {
 .development-team span {
   color: #ffffff;
   font-size: 60px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -0.55px;
 }
 
@@ -271,14 +271,14 @@ a {
 .main-footer h3 {
   color: #ffffff;
   font-size: 60px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -0.55px;
 }
 
 .main-footer p {
   color: #ffffff;
   font-size: 18px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -0.55px;
 }
 
@@ -302,7 +302,7 @@ a {
 .contact-form-item input {
   color: #bbbbbb;
   font-size: 18px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -0.55px;
 
   width: 455px;
@@ -316,7 +316,7 @@ a {
 .contact-form-item textarea {
   color: #bbbbbb;
   font-size: 18px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -0.55px;
 
   width: 455px;
@@ -329,5 +329,5 @@ a {
 
 .main-footer p:last-child {
   text-align: center;
-  line-height: auto;
+  line-height: normal;
 }
