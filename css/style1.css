@@ -1,0 +1,133 @@
+/* стили для Escape новые */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  width: 1400px;
+  min-height: 4456px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: "brandon_grotesqueregular", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: -0.55px;
+  font-weight: normal;
+  color: #777777;
+  text-transform: full-width;
+
+
+  background-color: #7690c5;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 860px;
+  margin: 0 auto;
+  padding: 0 40px;
+
+  text-align: center;
+}
+
+/* общие стили для текста*/
+.light {
+  font-weight: lighter;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.main-header {
+  color: #ffffff;
+   /* временно для сетки */
+   min-height: 620px;
+
+  background-color: #000000;
+  background-image: url("../img/header-background.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.main-navigation {
+  padding: 0;
+  padding-top: 50px;
+}
+
+.site-navigation,
+.main-slogan-list {
+  list-style: none;
+}
+
+.site-navigation a,
+.main-slogan-list a {
+  color: #ffffff;
+}
+
+.site-navigation a {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 41px;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  border: 2px solid lightgrey;
+  border-radius: 5px;
+
+  font-size: 21px;
+
+  background-color: #242424;
+}
+
+.site-navigation a:active {
+  border: 2px solid #777777;
+  border-radius: 5px;
+
+  font-size: 21px;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.main-slogan-list li:first-child {
+  margin-bottom: 40px;
+
+  font-size: 32px;
+  line-height: normal;
+}
+
+.main-slogan-list li:nth-child(2) {
+  margin-bottom: 70px;
+
+  font-size: 66px;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+
+.main-slogan-list .button {
+  display: block;
+  width: 240px;
+  min-height: 65px;
+  margin: 0 auto;
+  padding: 20px 0;
+
+  font-size: 23px;
+  font-weight: bold;
+  line-height: normal;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}

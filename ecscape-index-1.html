@@ -3,17 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>Проект Escape попытка2</title>
-    <!-- <link rel="stylesheet" href="fonts/stylesheet.css"> -->
+    <link rel="stylesheet" href="fonts/stylesheet.css">
     <link rel="stylesheet" href="css/normalize.css">
-    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style1.css">
   </head>
 
   <body>
     <!-- header -->
     <header class="main-header">
       <!-- logo and navigation buttons -->
-      <nav class="main-navigation">
-        <a class="main-header-logo">
+      <nav class="main-navigation container">
+        <a href="#" class="main-header-logo">
           <img src="img/logo.png" width="140" height="29" alt="Логотип проекта «Escape»"><!-- переделать логотип -->
         </a>
         <ul class="site-navigation">
@@ -26,13 +26,9 @@
         <!-- site's slogan -->
         <div class="main-slogan">
           <ul class="main-slogan-list">
-            <li>Can you build the website of my dreams?</li>
-            <li>Yup, we can do that.</li>
-            <li>
-              <a class="button" href="#">
-                <p>Learn More</p>
-                <!-- попробовать без тега <p> -->
-              </a>
+            <li class="light">Can you build the website of my dreams?</li>
+            <li class="bold">Yup, we can do that.</li>
+            <li><a class="button" href="#">Learn More</a>
             </li>
           </ul>
         </div>
@@ -40,9 +36,9 @@
     </header>
 
     <!-- content -->
-    <main class="container">
+    <main class="main-content"> <!-- вопрос по центровке -->
       <h1 class="visually-hidden">Website of my dreams</h1>
-      <section class="main-content">
+      <section class="container">
         <ul class="content-list">
           <!-- first section Web Developmen -->
           <li class="content-item web-development">
@@ -297,13 +293,14 @@
                       <button class="button visually-hidden" type="submit" name="submit-button" disabled>Отправить</button>
                       <!-- попробовать: если задать button id  и убрать disabled, а всем ссылкам задать label, будет ли работать, что при нажатии на ссылку отправляется форма!?... -->
                       <!-- добавить кнопку вверх и всем фото сделать увеличение -->
+                      <!-- заякорить ссылки -->
                     </li>
                   </ul>
               </fieldset>
             </form>
           </div>
+          <p class="made-in">© 2014 Escape by FreebiesXpress • Made In Toronto</p>
         </section>
-        <p class="made-in">© 2014 Escape by FreebiesXpress • Made In Toronto</p>
       </footer>
     </main>
   </body>
