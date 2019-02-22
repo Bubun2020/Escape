@@ -1,35 +1,69 @@
-/* стили для Escape новые */
-html {
-  box-sizing: border-box;
-}
+/* стили для Escape */
 
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-html,
 body {
   width: 1400px;
-  min-height: 4456px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
 
   font-family: "brandon_grotesqueregular", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
-  letter-spacing: -0.55px;
+  line-height: normal;
   font-weight: normal;
+  letter-spacing: -0.55px;
   color: #777777;
-  text-transform: full-width;
 
-
-  background-color: #7690c5;
-  background-position: 0 0;
-  background-repeat: no-repeat;
+  background-color: #ffffff;
 }
 
+/* --- общие стили --- */
 a {
   text-decoration: none;
+}
+
+ul {
+  padding-left: 0; /* уточнить как правильно */
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
+.button {
+  display: inline-block;
+  /* margin-right: 16px; */
+  /* padding: 10px 30px; */
+
+  font: inherit;
+  vertical-align: middle;
+  text-align: center;
+  color: #inherit;
+  text-transform: none;
+
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: transparent;
+/* сделать красиво */
 }
 
 .container {
@@ -40,7 +74,6 @@ a {
   text-align: center;
 }
 
-/* общие стили для текста*/
 .light {
   font-weight: lighter;
 }
@@ -49,56 +82,64 @@ a {
   font-weight: bold;
 }
 
+/* header */
 .main-header {
-  color: #ffffff;
-   /* временно для сетки */
-   min-height: 620px;
+  min-height: 620px;
 
   background-color: #000000;
-  background-image: url("../img/header-background.jpg");
-  background-position: 0 0;
+  background-image: url(../img/header-background.jpg);
   background-repeat: no-repeat;
+  background-position: top center;
+  /* background-size: contain; */
+}
+
+.main-header .container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 50px 0 120px 0;
+
+  line-height: normal;
+  color: #ffffff;
 }
 
 .main-navigation {
-  padding: 0;
-  padding-top: 50px;
+  margin-bottom: 150px;
 }
 
-.site-navigation,
-.main-slogan-list {
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
-.site-navigation a,
-.main-slogan-list a {
+.site-navigation a {
+  display: block;
+  margin-left: 15px;
+  vertical-align: middle;
+
+  font-size: 18px;
+  line-height: 41px;
+  font-weight: 600;
+  letter-spacing: 0;
+
   color: #ffffff;
 }
 
-.site-navigation a {
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 41px;
+.site-navigation li:first-child a {
+  margin-left: 0;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-  border: 2px solid lightgrey;
-  border-radius: 5px;
-
-  font-size: 21px;
-
-  background-color: #242424;
-}
-
-.site-navigation a:active {
-  border: 2px solid #777777;
-  border-radius: 5px;
-
-  font-size: 21px;
-
-  color: #000000;
-  background-color: #ffffff;
+.main-slogan-list {
+  list-style: none;
 }
 
 .main-slogan-list li:first-child {
@@ -109,25 +150,87 @@ a {
 }
 
 .main-slogan-list li:nth-child(2) {
-  margin-bottom: 70px;
+  margin-bottom: 75px;
 
-  font-size: 66px;
-  line-height: normal;
   text-transform: uppercase;
+  font-size: 66px;
 }
 
-
 .main-slogan-list .button {
-  display: block;
-  width: 240px;
-  min-height: 65px;
-  margin: 0 auto;
-  padding: 20px 0;
+  padding: 21px 68px 26px 69px;
+}
 
+.main-slogan-list li:last-child a {
+  color: #ffffff;
   font-size: 23px;
-  font-weight: bold;
-  line-height: normal;
+  font-weight: normal;
+  letter-spacing: 0;
+}
 
-  border: 2px solid #ffffff;
-  border-radius: 2px;
+/* ----- main-content ----- */
+.content-list {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+
+  list-style: none;
+}
+
+.content-item {
+  padding: 100px 0 100px 0;
+}
+
+.web-development .wrapper-item:first-child {
+margin-right: 80px;
+
+text-align: left;
+}
+
+.web-development .wrapper-item:last-child {
+padding: 10px;
+padding-left: 0;
+}
+
+.wrapper-item h2 {
+  margin: 0;
+  padding: 0;
+
+  color: #222222;
+  font-size: 60px;
+  line-height: 75px;
+}
+
+.wrapper-item p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.specification-list {
+  list-style: none;
+}
+
+.identity-branding {
+  background-color: #fafafa;
+  background-size: 100%;
+}
+
+.identity-branding .wrapper-item:first-child {
+  padding: 10px;
+  padding-right: 0;
+}
+
+.identity-branding .wrapper-item:last-child {
+  margin-left: 70px;
+
+  text-align: left;
+}
+
+.list-of-specifications .wrapper {
+  flex-wrap: wrap;
+}
+
+.specification-item {
+width: 430px;
+
+text-align: left;
 }
