@@ -46,10 +46,10 @@
   <main class="main-content">
     <!-- вопрос по центровке -->
     <h1 class="visually-hidden">Website of my dreams</h1>
-    <!-- <div class="container"> -->
+    <!-- <div class="container"> этот не нужен -->
       <ul class="content-list">
         <!-- first section Web Developmen -->
-        <li class="content-item web-development">
+        <li class="content-item web-development"> <!--попробовать через свойство grow-->
           <div class="wrapper container">
             <div class="wrapper-item">
               <h2>
@@ -87,7 +87,6 @@
               <!-- все фото загружены не правильно, переделать с помощью псевдоэлементов :before -->
               <!-- 1й -->
               <li class="specification-item">
-                <!-- <img src="imgPerson-Icon1.png" width="70" height="70" alt="первый значок " Branding & Identity""> -->
                 <a href="">
                   <h3>Branding & Identity</h3>
                 </a>
@@ -97,25 +96,6 @@
               </li>
               <!-- 2й -->
               <li class="specification-item">
-                <!-- <img src="imgPerson-Icon2.png" width="70" height="70" alt="второй значок " Mobile App Development""> -->
-                <a href="">
-                  <h3>Mobile App Development</h3>
-                </a>
-                <p>Proin iaculis purus consequat sem cure
-                  digni ssim. Donec porttitora entum suscipit
-                  aenean rhoncus posuere odio in tincidunt.</p>
-              </li>
-              <!-- 3й -->
-              <li class="specification-item">
-                <!-- <img src="imgPerson-Icon3.png" width="70" height="70" alt="третий значок " ui/ux""> <a href=""> -->
-                <h3>ui/ux</h3></a>
-                <p>Proin iaculis purus consequat sem cure
-                  digni ssim. Donec porttitora entum suscipit
-                  aenean rhoncus posuere odio in tincidunt.</p>
-              </li>
-              <!-- 4й -->
-              <li class="specification-item">
-                <!-- <img src="imgPerson-Icon4.png" width="70" height="70" alt="четвертый значок " Web & Graphic Design""> -->
                 <a href="">
                   <h3>Web & Graphic Design</h3>
                 </a>
@@ -123,9 +103,17 @@
                   digni ssim. Donec porttitora entum suscipit
                   aenean rhoncus posuere odio in tincidunt.</p>
               </li>
-              <!-- 5й -->
+              <!-- 3й -->
               <li class="specification-item">
-                <!-- <img src="imgPerson-Icon5.png" width="70" height="70" alt="пятый значок " Animation""> -->
+                <a href="">
+                  <h3>Mobile App Development</h3>
+                </a>
+                <p>Proin iaculis purus consequat sem cure
+                  digni ssim. Donec porttitora entum suscipit
+                  aenean rhoncus posuere odio in tincidunt.</p>
+              </li>
+              <!-- 4й -->
+              <li class="specification-item">
                 <a href="">
                   <h3>Animation</h3>
                 </a>
@@ -133,9 +121,15 @@
                   digni ssim. Donec porttitora entum suscipit
                   aenean rhoncus posuere odio in tincidunt.</p>
               </li>
+              <!-- 5й -->
+              <li class="specification-item">
+                <a href=""><h3>ui/ux</h3></a>
+                <p>Proin iaculis purus consequat sem cure
+                  digni ssim. Donec porttitora entum suscipit
+                  aenean rhoncus posuere odio in tincidunt.</p>
+              </li>
               <!-- 6й -->
               <li class="specification-item">
-                <!-- <img src="imgPerson-Icon6.png" width="70" height="70" alt="шестой значок " Photography""> -->
                 <a href="">
                   <h3>Photography</h3>
                 </a>
@@ -148,41 +142,50 @@
         </li>
         <!-- потрясающие клиенты -->
         <li class="content-item avesome-clients">
-          <h2>
-            <span class="light">Awesome</span>
-            <span class="bold">Clients</span>
-          </h2>
-          <p>
-            See what nice things our clients said about us.
-          </p>
-          <ul class="blockquote-list">
-            <li class="blockquote-item">
-              <a href="#">
-                <img src="img/foto1-boy.jpg" width="220" height="220" alt="Фото первого разработчика">
-              </a>
-              <blockquote class="first-blockquote" cite="http://">
-                <p>
-                  <q>Proin iaculis purus consequat sem cure digni ssim<br>
+          <div class="container">
+            <h2>
+              <span class="light">Awesome</span>
+              <span class="bold">Clients</span>
+            </h2>
+            <p>
+              See what nice things our clients said about us.
+            </p>
+            <ul class="blockquote-list wrapper">
+              <li class="blockquote-item">
+                <!-- <a href="#">
+                  <img src="img/foto1-boy.jpg" width="220" height="220" alt="Фото первого разработчика">
+                </a>  сделать элементом before-->
+                <blockquote class="first-blockquote" cite="http://">
+                  <p>
+                    <q>Proin iaculis purus consequat sem cure digni ssim<br>
                     donec porttitora entum suscipit aenean rhoncus.</q><br>
-                  <cite>
-                    <a href="#">- Jamie Richardson, Founder of Cocoa Media</a>
-                  </cite>
-                </p>
-              </blockquote>
-            </li>
-            <li class="blockquote-item"><a href="#"><img src="img/foto2-man.jpg" width="220" height="220" alt="Фото второго разработчика"></a>
-              <blockquote class="second-blockquote" cite="http://">
-                <p>
-                  <q>Proin iaculis purus consequat sem cure digni ssim<br>
+                    <a href="#">
+                      <cite>
+                      - Jamie Richardson, Founder of Cocoa Media
+                      </cite>
+                    </a>
+                  </p>
+                </blockquote>
+              </li>
+              <li class="blockquote-item">
+                <!-- <a href="#">
+                  <img src="img/foto2-man.jpg" width="220" height="220" alt="Фото второго разработчика">
+                </a> сделать элементом before-->
+                <blockquote class="second-blockquote" cite="http://">
+                  <p>
+                    <q>Proin iaculis purus consequat sem cure digni ssim<br>
                     donec porttitora entum suscipit aenean rhoncus.
-                  </q><br>
-                  <cite>
-                    <a href="#">- Bart Thompson, Founder of Rainel</a>
-                  </cite>
-                </p>
-              </blockquote>
-            </li>
-          </ul>
+                    </q><br>
+                    <a href="#">
+                      <cite>
+                      - Bart Thompson, Founder of Rainel
+                      </cite>
+                    </a>
+                  </p>
+                </blockquote>
+              </li>
+            </ul>
+          </div>
         </li>
         <!-- спонсоры -->
         <li class="content-item sponsors">
