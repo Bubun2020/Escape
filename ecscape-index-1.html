@@ -53,8 +53,8 @@
           <div class="wrapper container">
             <div class="wrapper-item">
               <h2>
-                <span class="light">Web<span>
-                    <span class="bold">Development<span>
+                <span class="light">Web</span>
+                    <span class="bold">Development</span>
               </h2>
               <p>Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio in tincidunt. Proin iaculis purus consequat sem cure digni ssim. Donec porttitora entum suscipit aenean rhoncus posuere odio
                 in tincidunt.</p>
@@ -69,6 +69,7 @@
         <li class="content-item identity-branding">
           <div class="container wrapper">
             <div class="wrapper-item">
+              <!-- убрать у картинок пробелы в названии -->
               <img src="img/Identity Branding.png" width="270" height="195" alt="Картинка identity branding">
             </div>
             <div class="wrapper-item">
@@ -123,7 +124,9 @@
               </li>
               <!-- 5й -->
               <li class="specification-item">
-                <a href=""><h3>ui/ux</h3></a>
+                <a href="">
+                  <h3>ui/ux</h3>
+                </a>
                 <p>Proin iaculis purus consequat sem cure
                   digni ssim. Donec porttitora entum suscipit
                   aenean rhoncus posuere odio in tincidunt.</p>
@@ -139,7 +142,6 @@
               </li>
             </ul>
           </li>
-        </li>
         <!-- потрясающие клиенты -->
         <li class="content-item avesome-clients">
           <div class="container">
@@ -156,7 +158,6 @@
                   <img src="img/foto1-boy.jpg" width="220" height="220" alt="Фото первого разработчика">
                 </a>  сделать элементом before-->
                 <blockquote class="first-blockquote" cite="http://">
-                  <p>
                     <q>Proin iaculis purus consequat sem cure digni ssim<br>
                     donec porttitora entum suscipit aenean rhoncus.</q><br>
                     <a href="#">
@@ -164,7 +165,6 @@
                       - Jamie Richardson, Founder of Cocoa Media
                       </cite>
                     </a>
-                  </p>
                 </blockquote>
               </li>
               <li class="blockquote-item">
@@ -172,7 +172,6 @@
                   <img src="img/foto2-man.jpg" width="220" height="220" alt="Фото второго разработчика">
                 </a> сделать элементом before-->
                 <blockquote class="second-blockquote" cite="http://">
-                  <p>
                     <q>Proin iaculis purus consequat sem cure digni ssim<br>
                     donec porttitora entum suscipit aenean rhoncus.
                     </q><br>
@@ -181,7 +180,6 @@
                       - Bart Thompson, Founder of Rainel
                       </cite>
                     </a>
-                  </p>
                 </blockquote>
               </li>
             </ul>
@@ -189,7 +187,7 @@
         </li>
         <!-- спонсоры -->
         <li class="content-item sponsors">
-          <ul class="sponsors-list">
+          <ul class="sponsors-list wrapper">
             <li class="sponsors-item">
               <a href="#">
                 <img src="img/sponsor-Envato.png" width="161" height="30" alt="Envato">
@@ -214,66 +212,75 @@
         </li>
         <!-- потрясающая команда -->
         <li class="content-item amazing-team">
-          <h2>
-            <span class="light">Amazing</span>
-            <span class="bold">Team</span>
-          </h2>
-          <p>These wonderful people make work enjoyable.</p>
-          <!-- фото спонсоров -->
-          <ul class="amazing-team-list">
-            <!-- 1 фото -->
-            <li class="amazing-team-item">
-              <div class="amazing-team-foto">
-                <a href="#">
-                  <img src="img/foto3-woman.jpg" width="220" height="220" alt="Фото первого спонсора">
-                </a>
-                <p>
-                  <a href="#">Kimberly Thompson</a><br>
-                  Marketer
-                </p>
-                <ul class="amazing-team-social">
-                  <li><a class="social-button" href="#">Twitter</a></li>
-                  <li><a class="social-button" href="#">Facebook</a></li>
-                  <li><a class="social-button" href="#">Pinterest</a></li>
-                </ul>
-              </div>
-            </li>
-            <!-- 2 фото -->
-            <li class="amazing-team-item">
-              <div class="amazing-team-foto">
-                <a href="#">
-                  <img src="img/foto4-man-glasses.jpg" width="220" height="220" alt="Фото второго спонсора">
-                </a>
-                <p>
-                  <a href="#">Rico Massimo</a><br>
-                  Coder
-                </p>
-                <ul class="amazing-team-social">
-                  <li><a class="social-button" href="#">Twitter</a></li>
-                  <li><a class="social-button" href="#">Facebook</a></li>
-                  <li><a class="social-button" href="#">Pinterest</a></li>
-                </ul>
-              </div>
-            </li>
-            <!-- 3 фото -->
-            <li class="amazing-team-item">
-              <div class="amazing-team-foto">
-                <a href="#">
-                  <img src="img/foto5-woman-blond.jpg" width="220" height="220" alt="Фото третьего спонсора">
-                </a>
-                <p>
-                  <a href="#">Uku Mason</a><br>
-                  Graphic Designer
-                </p>
-                <ul class="amazing-team-social">
-                  <li><a class="social-button" href="#">Facebook</a></li>
-                  <li><a class="social-button" href="#">Pinterest</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit<br>
-            aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+          <div class="container">
+            <h2>
+              <span class="light">Amazing</span>
+              <span class="bold">Team</span>
+            </h2>
+            <p class="subtitle">These wonderful people make work enjoyable.</p>
+            <!-- фото спонсоров -->
+            <ul class="amazing-team-list wrapper">
+              <!-- 1 фото -->
+              <li class="amazing-team-item">
+                <div class="amazing-team-foto">
+                  <a href="#">
+                    <img src="img/foto3-woman.jpg" width="220" height="220" alt="Фото первого спонсора">
+                  </a>
+                  <p class="amazing-team-name">
+                    <a class="easy-button bold" href="#">
+                      Kimberly Thompson
+                    </a><br>
+                    <span class="easy-button-prof">Marketer</span>
+                  </p>
+                  <ul class="amazing-team-social">
+                    <li><a class="social-button" href="#">Twitter</a></li>
+                    <li><a class="social-button" href="#">Facebook</a></li>
+                    <li><a class="social-button" href="#">Pinterest</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- 2 фото -->
+              <li class="amazing-team-item">
+                <div class="amazing-team-foto">
+                  <a href="#">
+                    <img src="img/foto4-man-glasses.jpg" width="220" height="220" alt="Фото второго спонсора">
+                  </a>
+                  <p class="amazing-team-name">
+                    <a class="easy-button bold" href="#">
+                      Rico Massimo
+                    </a><br>
+                    <span class="easy-button-prof">Coder</span>
+                  </p>
+                  <ul class="amazing-team-social">
+                    <li><a class="social-button" href="#">Twitter</a></li>
+                    <li><a class="social-button" href="#">Facebook</a></li>
+                    <li><a class="social-button" href="#">Google +</a></li>
+                  </ul>
+                </div>
+              </li>
+              <!-- 3 фото -->
+              <li class="amazing-team-item">
+                <div class="amazing-team-foto">
+                  <a href="#">
+                    <img src="img/foto5-woman-blond.jpg" width="220" height="220" alt="Фото третьего спонсора">
+                  </a>
+                  <p class="amazing-team-name">
+                    <a class="easy-button bold" href="#">
+                      Uku Mason</a><br>
+                    <span class="easy-button-prof">Graphic Designer</span>
+                  </p>
+                  <ul class="amazing-team-social">
+                    <li><a class="social-button" href="#">Facebook</a></li>
+                    <li><a class="social-button" href="#">Pinterest</a></li>
+                    <li><a class="social-button hidden" href="#">Hidden</a></li>
+                    <!-- позже убрать -->
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <p>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit<br>
+              aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
+          </div>
         </li>
       </ul>
     <!-- </div> -->

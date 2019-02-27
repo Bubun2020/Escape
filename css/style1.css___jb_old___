@@ -101,8 +101,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  list-style: none;
 }
 
 .site-navigation {
@@ -227,6 +225,22 @@ input[type="radio"].visually-hidden {
   margin-bottom: 45px;
 }
 
+.specification-item h3 {
+  margin: 0;
+  margin-bottom: 4px;
+  padding: 0;
+  color: #222222;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.specification-item p {
+  margin: 0;
+  padding: 0;
+
+  line-height: 18px;
+}
+
 .specification-item:first-child::before,
 .specification-item:nth-child(2)::before,
 .specification-item:nth-child(3)::before,
@@ -253,6 +267,7 @@ input[type="radio"].visually-hidden {
   background-image: url("../img/Person-Icon2(small).png");
 }
 
+
 .specification-item:nth-child(3)::before {
   background-image: url("../img/Person-Icon3(small).png");
 }
@@ -267,22 +282,6 @@ input[type="radio"].visually-hidden {
 
 .specification-item:nth-child(6)::before {
   background-image: url("../img/Person-Icon6(small).png");
-}
-
-.specification-item h3 {
-  margin: 0;
-  margin-bottom: 4px;
-  padding: 0;
-  color: #222222;
-  font-size: 22px;
-  font-weight: 600;
-}
-
-.specification-item p {
-  margin: 0;
-  padding: 0;
-
-  line-height: 18px;
 }
 
 .avesome-clients .wrapper {
@@ -306,7 +305,6 @@ input[type="radio"].visually-hidden {
 .avesome-clients p {
   margin: 0;
   margin-bottom: 100px;
-
   padding: 0;
 
   font-size: 22px;
@@ -316,11 +314,7 @@ input[type="radio"].visually-hidden {
   width: 100%;
   position: relative;
 
-  /* text-align: left; */
-}
-
-.blockquote-item:first-child {
-  align-items: center;
+  text-align: left;
 }
 
 .blockquote-list .first-blockquote {
@@ -350,81 +344,4 @@ input[type="radio"].visually-hidden {
   color: #7690c5;
   font-size: 20px;
   line-height: 36px;
-}
-
-
-.sponsors-list {
-  justify-content: center;
-}
-
-.sponsors-item:first-child {
-  margin-right: 39px;
-}
-
-.sponsors-item:nth-child(2) {
-  margin-right: 40px;
-}
-
-.sponsors-item:nth-child(3) {
-  margin-right: 41px;
-}
-
-.amazing-team {
-  background-color: #111111;
-}
-
-.amazing-team h2 {
-  margin: 0;
-  padding: 0;
-
-  color: #ffffff;
-  font-size: 60px;
-}
-
-.amazing-team .subtitle {
-  margin: 0;
-  margin-bottom: 80px;
-  padding: 0;
-
-  color: #777777;
-  font-size: 22px;
-}
-
-.amazing-team .wrapper {
-  justify-content: space-around;
-}
-
-/* на всякий случай */
-/* .amazing-team-item + li {
-  margin-left: 60px;
-} */
-
-/* сделать с ховер карасиво */
-.amazing-team img {
-  border: 8px solid #ffffff;
-  border-radius: 50%;
-}
-
-.amazing-team-name {
-  margin: 0;
-  padding: 0;
-}
-
-.amazing-team-name .easy-button {
-  display: inline-block;
-  color: #ebebeb;
-  line-height: 50px;
-  font-weight: bold;
-}
-
-.amazing-team-name .easy-button-prof {
-  font-size: 16px;
-  color: #978a92;
-}
-
-.amazing-team-social {
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-  /* align-items: center; */
 }
