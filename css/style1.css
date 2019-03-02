@@ -450,7 +450,7 @@ input[type="radio"].visually-hidden {
 }
 
 .amazing-team-social .social-button {
-
+  /* соц-кнопки доделать позже */
 }
 
 .amazing-team .subtitle-footer {
@@ -459,4 +459,38 @@ input[type="radio"].visually-hidden {
 
   color: #ebebeb;
   font-size: 20px;
+}
+
+/* ----- футер ----- */
+  .main-footer {
+    background-color: #7690c5;
+  }
+
+.footer-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+
+  list-style: none;
+}
+
+.main-footer .container {
+  width: 940px;
+}
+
+.footer-content {
+  width: 50%;
+}
+
+.main-footer .made-in {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  min-height: 80px;
+}
+
+.main-footer .made-in p {
+  margin: 0;
+  padding: 0;
 }
