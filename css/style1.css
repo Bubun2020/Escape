@@ -67,6 +67,14 @@ input[type="radio"].visually-hidden {
   text-align: center;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style: none;
+}
+
 .light {
   font-weight: lighter;
 }
@@ -95,14 +103,6 @@ input[type="radio"].visually-hidden {
 
 .main-navigation {
   margin-bottom: 150px;
-}
-
-.wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  list-style: none;
 }
 
 .site-navigation {
@@ -324,7 +324,24 @@ input[type="radio"].visually-hidden {
   margin-bottom: 80px;
 }
 
+.blockquote-item blockquote:first-child {
+  box-sizing: border-box;
+  padding-top: 29px;
+  padding-left: 99px;
+
+  text-align: left;
+}
+
+.blockquote-item blockquote:last-child {
+  box-sizing: border-box;
+  padding-top: 41px;
+  padding-left: 79px;
+
+  text-align: left;
+}
+
 .blockquote-item cite {
+  margin-top: 5px;
   font-style: inherit;
 }
 
@@ -340,6 +357,16 @@ input[type="radio"].visually-hidden {
 }
 
 /* тут элемент after */
+.blockquote-item:last-child::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/foto2-man.jpg");
+  right: -40px;
+  bottom: -2px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+}
 
 .blockquote-list .first-blockquote {
   /* position: relative; */
@@ -479,14 +506,121 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-content {
-  width: 50%;
+  /* width: 50%; */
+  width: 470px;
 }
+
+.footer-contacts-list,
+.contact-form-list {
+  width: 470px;
+  list-style: none;
+}
+
+.footer-content h3 {
+  margin: 0;
+  padding: 0;
+
+  font-size: 60px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer-content p {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+
+  font-size: 18px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer-contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+
+position: relative;
+text-align: left;
+}
+
+.footer-contacts-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.footer-contacts-item:first-child::before {
+  background-image: url("../img/Mobile-Icon.png");
+}
+
+.footer-contacts-item:nth-child(2)::before {
+  background-image: url("../img/Mail-Icon.png");
+}
+
+.footer-contacts-item:nth-child(3)::before {
+  background-image: url("../img/Twitter-Icon.png");
+}
+
+.footer-contacts-item:nth-child(4)::before {
+  background-image: url("../img/Facebook-Icon.png");
+}
+
+.footer-contacts-item:nth-child(5)::before {
+  background-image: url("../img/Google.png");
+}
+
+.footer-contacts-item:last-child::before {
+  background-image: url("../img/Pinterest-Icon.png");
+}
+
+.footer-contacts-item {
+  box-sizing: border-box;
+  width: 230px;
+  height: 30px;
+  padding-left: 40px;
+}
+
+.footer-contacts-item:nth-child(5),
+.footer-contacts-item:nth-child(6) {
+  height: 55px;
+}
+
+.footer-contacts-item a {
+  letter-spacing: 0;
+  color: #ffffff;
+}
+
+.footer-contacts-item:not(:nth-child(5)):not(:nth-child(6)) {
+  margin-bottom: 40px;
+}
+
+/* не работает
+.footer-contacts-item a:nth-of-type(odd) {
+  margin-left: 10px;
+} */
+
+/* самой ссылке сделать margin
+.footer-contacts-item:nth-child(even) {
+  margin-left: 10px;
+} */
+
+.contacts-form fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+
+
 
 .main-footer .made-in {
   display: flex;
-  padding: 0;
   justify-content: center;
   align-items: center;
+  padding: 0;
   min-height: 80px;
 }
 
