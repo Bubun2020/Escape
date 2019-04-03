@@ -3,7 +3,7 @@
 
 
 body {
-  width: 1400px;
+  /* width: 1400px; */
   margin: 0 auto;
   padding: 0;
   font-family: "brandon_grotesqueregular", Arial, sans-serif;
@@ -85,12 +85,12 @@ input[type="radio"].visually-hidden {
 
 /* --- header --- */
 .main-header {
-  min-height: 620px; /* --- временно --- */
+  height: 620px; /* --- временно --- */
   background-color: #000000;
   background-image: url("../img/header-background.jpg");
   background-repeat: no-repeat;
-  background-position: 0 0;
-  /* background-size: contain; */
+  background-position: center;
+  background-size: cover;
 }
 
 .main-header .container {
@@ -491,6 +491,7 @@ input[type="radio"].visually-hidden {
 /* ----- футер ----- */
   .main-footer {
     background-color: #7690c5;
+    padding-top: 100px;
   }
 
 .footer-content-wrapper {
@@ -506,8 +507,10 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-content {
-  /* width: 50%; */
-  width: 470px;
+  /* box-sizing: border-box; */
+  width: 50%;
+  /* width: 470px; */
+  margin-bottom: 100px;
 }
 
 .footer-contacts-list,
@@ -541,51 +544,81 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
 
-position: relative;
+/* position: relative; */
 text-align: left;
-}
-
-.footer-contacts-item::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.footer-contacts-item:first-child::before {
-  background-image: url("../img/Mobile-Icon.png");
-}
-
-.footer-contacts-item:nth-child(2)::before {
-  background-image: url("../img/Mail-Icon.png");
-}
-
-.footer-contacts-item:nth-child(3)::before {
-  background-image: url("../img/Twitter-Icon.png");
-}
-
-.footer-contacts-item:nth-child(4)::before {
-  background-image: url("../img/Facebook-Icon.png");
-}
-
-.footer-contacts-item:nth-child(5)::before {
-  background-image: url("../img/Google.png");
-}
-
-.footer-contacts-item:last-child::before {
-  background-image: url("../img/Pinterest-Icon.png");
 }
 
 .footer-contacts-item {
   box-sizing: border-box;
+  position: relative;
   width: 230px;
-  height: 30px;
+  min-height: 32px;
   padding-left: 40px;
 }
 
 .footer-contacts-item:nth-child(5),
 .footer-contacts-item:nth-child(6) {
-  height: 55px;
+  min-height: 55px;
+}
+
+.footer-contacts-item:first-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/Mobile-Icon.png");
+  top: 2px;
+  left: 6px;
+  width: 18px;
+  height: 29px;
+}
+
+.footer-contacts-item:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/Mail-Icon.png");
+  top: 8px;
+  left: 0;
+  width: 27px;
+  height: 18px;
+}
+
+.footer-contacts-item:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/Twitter-Icon.png");
+  top: 0;
+  left: 2px;
+  width: 28px;
+  height: 22px;
+}
+
+.footer-contacts-item:nth-child(4)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/Facebook-Icon.png");
+  top: -1px;
+  left: 5px;
+  width: 16px;
+  height: 27px;
+}
+
+.footer-contacts-item:nth-child(5)::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/Google.png");
+  top: -1px;
+  left: 1px;
+  width: 28px;
+  height: 27px;
+}
+
+.footer-contacts-item:last-child::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/Pinterest-Icon.png");
+  top: -1px;
+  left: 2px;
+  width: 24px;
+  height: 31px;
 }
 
 .footer-contacts-item a {
@@ -593,38 +626,87 @@ text-align: left;
   color: #ffffff;
 }
 
+.footer-contacts-item:nth-child(even) a {
+  margin-left: 10px;
+}
+
 .footer-contacts-item:not(:nth-child(5)):not(:nth-child(6)) {
   margin-bottom: 40px;
 }
 
-/* не работает
-.footer-contacts-item a:nth-of-type(odd) {
-  margin-left: 10px;
-} */
+.contacts-form {
+  padding-left: 14px;
+}
 
-/* самой ссылке сделать margin
-.footer-contacts-item:nth-child(even) {
-  margin-left: 10px;
-} */
+.contacts-form input[type="text"],
+.contacts-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 16px 0 21px 20px;
+  border: 1px solid #bec8dd;
+  border-radius: 2px;
+  font: inherit;
+}
 
-.contacts-form fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
+.contacts-form input[type="text"]:nth-of-type(2) {
+  margin: 29px 0 21px 0;
+}
+
+.contacts-form textarea {
+  padding: 16px 0 0 20px;
+}
+
+/*placeholder's color */
+.contacts-form input[type="text"]::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+
+.contacts-form input[type="text"]::-moz-placeholder {
+  color: #bbbbbb;/* Firefox 19+ */
 }
 
 
+.contacts-form input[type="text"]:-moz-placeholder {
+  color: #bbbbbb;/* Firefox 18- */
+}
 
 
-.main-footer .made-in {
+.contacts-form input[type="text"]:-ms-input-placeholder {
+  color: #bbbbbb;
+}
+
+.contacts-form textarea::-webkit-input-placeholder {
+  color: #bbbbbb;
+}
+
+.contacts-form textarea::-moz-placeholder {
+  color: #bbbbbb;/* Firefox 19+ */
+}
+
+
+.contacts-form textarea:-moz-placeholder {
+  color: #bbbbbb;/* Firefox 18- */
+}
+
+
+.contacts-form textarea:-ms-input-placeholder {
+  color: #bbbbbb;
+}
+
+.main-footer .container {
+  width: 860px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.main-footer .made-in {/*made-in сделать отдельным блоком*/
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
+  width: 860px;
   min-height: 80px;
-}
+  margin: 0 auto;
+  padding: 0 40px;
 
-.main-footer .made-in p {
-  margin: 0;
-  padding: 0;
+  color: #ffffff;
 }
